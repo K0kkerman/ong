@@ -1,3 +1,5 @@
-var backgroundVideo = document.getElementById('background-video');
+// Get the video element
+const video = document.getElementById('bg-video');
 
-backgroundVideo.pause();
+// Play the video
+video.play();
