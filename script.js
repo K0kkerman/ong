@@ -1,5 +1,11 @@
-// Get the video element
-const video = document.getElementById('bg-video');
+var backgroundVideo = document.getElementById('background-video');
 
-// Play the video
-video.play();
+function handleVisibilityChange() {
+  if (document.hidden) {
+    backgroundVideo.pause();
+  } else {
+    backgroundVideo.play();
+  }
+}
+
+document.addEventListener('visibilitychange', handleVisibilityChange);
